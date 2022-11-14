@@ -1,7 +1,8 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { git } from "../github";
+import { Card } from "./cards";
 
-interface iGit {
+interface iGitUser {
   login: string;
   id: number;
   node_id: string;
@@ -36,15 +37,31 @@ interface iGit {
   updated_at: string;
 }
 
+interface iGitRepo {
+  id: number;
+  name: string;
+  language: string;
+  html_url: string;
+}
+
+interface iRepo {
+  id: number;
+  name: string;
+  lang: string;
+  link: string;
+}
+
 export function Projetos() {
-  async function pegarDados<iGit>() {
+  const [listaRepos, setListaRepos] = useState<iGitRepo[]>();
+
+  async function pegarDados() {
     try {
-      let res = await git.get<iGit>("/users/Elfo1507/repos");
+      let res = await git.get<iGitRepo[]>("/users/Elfo1507/repos");
       console.log(res);
-      return res;
+      setListaRepos(res.data);
+      console.log(listaRepos);
     } catch (err) {
       console.log(err);
-      return err;
     }
   }
 
@@ -54,7 +71,11 @@ export function Projetos() {
 
   return (
     <section>
-      <ul></ul>
+      <ul>
+        {listaRepos && listaRepos.map((e) => {
+          return <Card key={e.id} name={e.name} lang={e.language} link={e.html_url} />;
+        })}
+      </ul>
     </section>
   );
 }
