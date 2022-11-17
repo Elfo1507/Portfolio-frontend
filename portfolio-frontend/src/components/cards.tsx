@@ -7,10 +7,7 @@ interface iCard{
 export function Card({name, lang, link}: iCard){
  
     return(<li>
-        <div>
-            <h3>{name}</h3>
-            <p>{lang}</p>
-        </div>
+        <h3>{name}</h3>
         <a href={link}>Repo</a>
     </li>)
 }
