@@ -5,10 +5,11 @@ export function Sobre() {
     <SobreStyle id="sobre">
       <p>
         Minha relação com a tecnologia como desenvolvedor começou no início do
-        meu ensino médio, o que me fez tomar a decisão de seguir carreira. Assim
-        que me formei, procurei entrar em uma universidade com um curso da área
-        e procurei também aprender por fora, com a Kenzie. Gosto da área porque
-        eu simplesmente amo criar coisas e amo lógica. A combinação dessas duas
+        meu ensino médio, vendo aulas de python com o ancião Gustavo Guanabara.
+        Isso me fez tomar a decisão de seguir carreira. Assim que me formei,
+        procurei entrar em uma universidade com um curso da área e procurei
+        também aprender por fora, com a Kenzie. Gosto da área porque eu
+        simplesmente amo criar coisas e amo lógica. A combinação dessas duas
         paixões na programação me fez decidir seguir por esse caminho. Meu
         objetivo é me tornar alguém renomado na área, que é bem requisitado
         tanto para trabalhar em projetos tanto para passar meus conhecimentos.
