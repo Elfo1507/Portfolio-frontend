@@ -27,4 +27,5 @@ export const Global = createGlobalStyle`
         color: #F2F2F2;
         scroll-behavior: smooth;
     }
+
 `;
