@@ -3,8 +3,9 @@ import styled from "styled-components";
 export const SobreStyle = styled.section`
   background-color: var(--grey4);
   font-size: 10px;
-  height: 400px;
+  min-height: 400px;
   display: flex;
+  gap: 10px;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -25,6 +26,9 @@ export const SobreStyle = styled.section`
     div {
       height: 350px;
       width: 2px;
+    }
+    p {
+      width: 400px;
     }
   }
 `;
