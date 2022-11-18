@@ -6,7 +6,7 @@ export const HeaderMenu = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 60px;
+  padding: 5px 20px;
   position: fixed;
   top: 0;
   z-index: 999;
@@ -26,5 +26,6 @@ export const HeaderMenu = styled.header`
 
   @media (min-width: 768px) {
     font-size: 17px;
+    padding: 5px 60px;
   }
 `;

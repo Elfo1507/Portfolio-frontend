@@ -20,6 +20,8 @@ export const SobreStyle = styled.section`
     width: 200px;
   }
   @media (min-width: 768px) {
+    flex-direction: row;
+    font-size: 15px;
     div {
       height: 350px;
       width: 2px;

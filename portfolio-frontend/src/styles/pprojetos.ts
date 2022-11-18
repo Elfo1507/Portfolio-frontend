@@ -29,4 +29,20 @@ export const PProjetosStyle = styled.section`
     border-bottom-right-radius: 5px;
     padding: 5px;
   }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding: 50px 70px;
+    align-items: flex-start;
+    font-size: 12px;
+    justify-content: space-around;
+
+    img{
+      width: 400px;
+      height: 200px;
+    }
+    p{
+      width: 400px;
+    }
+  }
 `;
