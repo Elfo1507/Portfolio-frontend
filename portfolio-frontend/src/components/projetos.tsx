@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { git } from "../github";
+import { ProjetosContainer } from "../styles/projetos";
 import { Card } from "./cards";
 
 // interface iGitUser {
@@ -40,7 +41,6 @@ import { Card } from "./cards";
 interface iGitRepo {
   id: number;
   name: string;
-  language: string;
   html_url: string;
 }
 
@@ -70,12 +70,21 @@ export function Projetos() {
   }, []);
 
   return (
-    <section id="projetos">
+    <ProjetosContainer id="projetos">
+      <h3>Aqui ficam meus repositórios do GitHub</h3>
+      <p>Só clicar na palavra "Repo" que você será levado ao projeto</p>
       <ul>
-        {listaRepos && listaRepos.map((e) => {
-          return <Card key={e.id} name={e.name} lang={e.language} link={e.html_url} />;
-        })}
+        {listaRepos &&
+          listaRepos.map((e) => {
+            return (
+              <Card
+                key={e.id}
+                name={e.name}
+                link={e.html_url}
+              />
+            );
+          })}
       </ul>
-    </section>
+    </ProjetosContainer>
   );
 }

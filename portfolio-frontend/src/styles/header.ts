@@ -8,6 +8,7 @@ export const HeaderMenu = styled.header`
   padding: 5px 20px;
   position: fixed;
   top: 0;
+  z-index: 999;
   width: 100%;
 
   & > div {

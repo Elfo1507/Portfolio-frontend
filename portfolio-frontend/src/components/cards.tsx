@@ -1,13 +1,15 @@
-interface iCard{
-    name: string
-    lang: string
-    link: string
+import { CardStyle } from "../styles/card";
+
+interface iCard {
+  name: string;
+  link: string;
 }
 
-export function Card({name, lang, link}: iCard){
- 
-    return(<li>
-        <h3>{name}</h3>
-        <a href={link}>Repo</a>
-    </li>)
+export function Card({ name, link }: iCard) {
+  return (
+    <CardStyle>
+      <h3>{name}</h3>
+      <a href={link} target="_blank" rel="noreferrer">Repo</a>
+    </CardStyle>
+  );
 }

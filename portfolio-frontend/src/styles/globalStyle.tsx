@@ -2,7 +2,8 @@ import { createGlobalStyle } from "styled-components";
 
 export const Global = createGlobalStyle`
     :root{
-        --main-color: #011140;
+        --main-color: #000b2c;
+        --dark-color: #000514;
         --light-color: #D7E5EE;
 
         --grey0: #F2F2F2;
@@ -23,5 +24,7 @@ export const Global = createGlobalStyle`
         box-sizing: border-box;
         text-decoration: none;
         font-family: 'Raleway', sans-serif;
+        color: #F2F2F2;
+        scroll-behavior: smooth;
     }
 `;
