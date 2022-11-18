@@ -8,11 +8,13 @@ export function Home() {
       <HomeTitle>
         &lt;h1&gt;Seja bem vindo(a) ao meu portfolio pessoal&lt;/h1&gt;
       </HomeTitle>
-      <HomeText>
-        Seja bem vindo ao local onde mostrarei meus projetos e minhas
-        capacidades, alem de dizer um pouco sobre mim
-      </HomeText>
-      <HomeImg src={eu} alt="foto de Alefi" />
+      <div>
+        <HomeText>
+          Seja bem vindo ao local onde mostrarei meus projetos e minhas
+          capacidades, alem de dizer um pouco sobre mim
+        </HomeText>
+        <HomeImg src={eu} alt="foto de Alefi" />
+      </div>
     </HomeStyle>
   );
 }

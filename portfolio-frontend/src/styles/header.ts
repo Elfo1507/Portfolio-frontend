@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const HeaderMenu = styled.header`
   background-color: var(--greyT);
+  font-size: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,6 +11,7 @@ export const HeaderMenu = styled.header`
   top: 0;
   z-index: 999;
   width: 100%;
+  height: 40px;
 
   & > div {
     width: 100%;
@@ -20,5 +22,10 @@ export const HeaderMenu = styled.header`
 
   a {
     color: var(--grey0);
+  }
+
+  @media (min-width: 768px) {
+    font-size: 17px;
+    padding: 5px 60px;
   }
 `;
