@@ -1,8 +1,8 @@
 export function Sobre() {
   return (
-    <section>
-      <div></div>
-      <div></div>
+    <section id="sobre">
+      <p>batata</p>
+      <p>teste</p>
     </section>
   );
 }
